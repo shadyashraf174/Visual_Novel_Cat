@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Visual Novel Cat</string>
+    <string name="start">Start</string>
+    <string name="my_visual_novel">My Visual Novel</string>
+    <string name="hello_my_name_is_jack_and_you">Hello! My name is Jack. And you?</string>
+    <string name="accept">Accept</string>
+    <string name="great_username_what_we_are_going_to_do"><![CDATA[Great, <username>! What we are going to do?]]></string>
+    <string name="walking">Walking</string>
+    <string name="hiking">Hiking</string>
+    <string name="go_to_the_field">Go to the field</string>
+    <string name="may_be_go_home">May be, go home?</string>
+    <string name="you_are_sad_let_s_go_home">You are sad... Let’s go home?</string>
+    <string name="may_be_let_s_watch_the_film">May be, let’s watch the film?</string>
+    <string name="yes_let_s_celebrate_the_halloween">Yes, let’s celebrate the Halloween</string>
+    <string name="do_you_like_this_film">Do you like this film?</string>
+    <string name="i_like_it">I like it!</string>
+    <string name="no">No...</string>
+    <string name="very_beautiful">Very beautiful!</string>
+    <string name="yes_let_s_watch_the_film">Yes! Let’s watch the film!</string>
+    <string name="yes_let_s_create_costume">Yes! Let’s create costume!</string>
+    <string name="great_it_s_time_to_sleep">Great! It’s time to sleep...</string>
+    <string name="yes_it_s_too_late">Yes, it’s too late...</string>
+    <string name="may_be_go_sleep">May be go sleep?</string>
+    <string name="i_like_your_costume">I like your costume.</string>
+    <string name="your_costume_is_beautiful_too">Your costume is beautiful too!</string>
+    <string name="to_tell_you_the_truth_i_don_t_like_your">To tell you the truth, I don’t like your...</string>
+    <string name="thank_you_let_s_go_to_sleep">Thank you! Let’s go to sleep.</string>
+    <string name="it_s_ok_i_m_not_taking_offence_let_s_go_to_sleep">It’s ok, i’m not taking offence. Let’s go to sleep!</string>
+    <string name="thank_you_for_playing">Thank you for playing!</string>
+    <string name="repeat_the_game">Repeat the game</string>
 </resources>

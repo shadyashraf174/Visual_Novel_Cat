@@ -29,6 +29,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -133,7 +134,7 @@ fun Android_1(
                 .fillMaxWidth()
                 .padding(40.dp)
                 .offset(x = 60.dp),
-            text = "My Visual Novel",
+            text = stringResource(R.string.my_visual_novel),
             fontSize = 30.sp,
             color = White
         )
@@ -148,7 +149,7 @@ fun Android_1(
             onClick = { navHostController.navigate("S_2") }
         ) {
             Text(
-                "Start",
+                stringResource(R.string.start),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -196,15 +197,15 @@ fun Android_2(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 30.dp),
-            text = "Hello! My name is Jack. And you?",
+            text = stringResource(R.string.hello_my_name_is_jack_and_you),
             color = White
         )
 
         var text by remember { mutableStateOf("") }
 
         TextField(
-            value = "Input your name...",
-            onValueChange = { newText -> text = newText },
+            value = text,
+            onValueChange = { text = it },
             singleLine = true,
             modifier = Modifier
                 .padding(16.dp)
@@ -223,7 +224,7 @@ fun Android_2(
 
         ) {
             Text(
-                "Accept",
+                stringResource(R.string.accept),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -269,7 +270,7 @@ fun Android_3(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 10.dp),
-            text = "Great, <username>! What we are going to do?",
+            text = stringResource(R.string.great_username_what_we_are_going_to_do),
             color = White
         )
         Button(
@@ -282,7 +283,7 @@ fun Android_3(
 
         ) {
             Text(
-                "Walking",
+                stringResource(R.string.walking),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -296,7 +297,7 @@ fun Android_3(
 
         ) {
             Text(
-                "Hiking",
+                stringResource(R.string.hiking),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -310,7 +311,7 @@ fun Android_3(
 
         ) {
             Text(
-                "Go to the field",
+                stringResource(R.string.go_to_the_field),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -349,7 +350,7 @@ fun Android_4(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 110.dp),
-            text = "May be, go home?",
+            text = stringResource(R.string.may_be_go_home),
             color = White
         )
         Button(
@@ -362,7 +363,7 @@ fun Android_4(
 
         ) {
             Text(
-                "Hiking",
+                stringResource(R.string.hiking),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -376,7 +377,7 @@ fun Android_4(
 
         ) {
             Text(
-                "Go to the field",
+                stringResource(R.string.go_to_the_field),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -416,7 +417,7 @@ fun Android_5(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 110.dp),
-            text = "May be, go home?",
+            text = stringResource(R.string.may_be_go_home),
             color = White
         )
         Button(
@@ -429,7 +430,7 @@ fun Android_5(
 
         ) {
             Text(
-                "Hiking",
+                stringResource(R.string.hiking),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -443,7 +444,7 @@ fun Android_5(
 
         ) {
             Text(
-                "Go to the field",
+                stringResource(R.string.go_to_the_field),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -482,7 +483,7 @@ fun Android_6(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 80.dp),
-            text = "You are sad... Let’s go home?",
+            text = stringResource(R.string.you_are_sad_let_s_go_home),
             color = White
         )
         Button(
@@ -495,7 +496,7 @@ fun Android_6(
 
         ) {
             Text(
-                "May be, let’s watch the film?",
+                stringResource(R.string.may_be_let_s_watch_the_film),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -509,7 +510,7 @@ fun Android_6(
 
         ) {
             Text(
-                "Yes, let’s celebrate the Halloween",
+                stringResource(R.string.yes_let_s_celebrate_the_halloween),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -549,7 +550,7 @@ fun Android_7(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 100.dp),
-            text = "Do you like this film?",
+            text = stringResource(R.string.do_you_like_this_film),
             color = White
         )
         Button(
@@ -562,7 +563,7 @@ fun Android_7(
 
         ) {
             Text(
-                "I like it!",
+                stringResource(R.string.i_like_it),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -576,7 +577,7 @@ fun Android_7(
 
         ) {
             Text(
-                "No...",
+                stringResource(R.string.no),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -616,7 +617,7 @@ fun Android_8(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 130.dp),
-            text = "Very beautiful!",
+            text = stringResource(R.string.very_beautiful),
             color = White
         )
         Button(
@@ -629,7 +630,7 @@ fun Android_8(
 
         ) {
             Text(
-                "Yes! Let’s watch the film!",
+                stringResource(R.string.yes_let_s_watch_the_film),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -643,7 +644,7 @@ fun Android_8(
 
         ) {
             Text(
-                "Yes! Let’s create costume!",
+                stringResource(R.string.yes_let_s_create_costume),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -682,7 +683,7 @@ fun Android_9(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 110.dp),
-            text = "Great! It’s time to sleep...",
+            text = stringResource(R.string.great_it_s_time_to_sleep),
             color = White
         )
         Button(
@@ -695,7 +696,7 @@ fun Android_9(
 
         ) {
             Text(
-                "Yes, it’s too late...",
+                stringResource(R.string.yes_it_s_too_late),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -734,7 +735,7 @@ fun Android_10(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 110.dp),
-            text = "May be go sleep?",
+            text = stringResource(R.string.may_be_go_sleep),
             color = White
         )
         Button(
@@ -747,7 +748,7 @@ fun Android_10(
 
         ) {
             Text(
-                "Yes, it’s too late...",
+                stringResource(R.string.yes_it_s_too_late),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -786,7 +787,7 @@ fun Android_11(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 130.dp),
-            text = "I like your costume.",
+            text = stringResource(R.string.i_like_your_costume),
             color = White
         )
         Button(
@@ -799,7 +800,7 @@ fun Android_11(
 
         ) {
             Text(
-                "Your costume is beautiful too!",
+                stringResource(R.string.your_costume_is_beautiful_too),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -813,7 +814,7 @@ fun Android_11(
 
         ) {
             Text(
-                "To tell you the truth, I don’t like your...",
+                stringResource(R.string.to_tell_you_the_truth_i_don_t_like_your),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -852,7 +853,7 @@ fun Android_12(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(x = 100.dp),
-            text = "Thank you! Let’s go to sleep.",
+            text = stringResource(R.string.thank_you_let_s_go_to_sleep),
             color = White
         )
         Button(
@@ -865,7 +866,7 @@ fun Android_12(
 
         ) {
             Text(
-                "Yes, it’s too late...",
+                stringResource(R.string.yes_it_s_too_late),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -904,7 +905,7 @@ fun Android_13(
                 .fillMaxWidth()
                 .padding(10.dp)
                 .offset(10.dp),
-            text = "It’s ok, i’m not taking offence. Let’s go to sleep!",
+            text = stringResource(R.string.it_s_ok_i_m_not_taking_offence_let_s_go_to_sleep),
             color = White
         )
         Button(
@@ -917,7 +918,7 @@ fun Android_13(
 
         ) {
             Text(
-                "Yes, it’s too late...",
+                stringResource(R.string.yes_it_s_too_late),
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -957,7 +958,7 @@ fun Android_14(
                 .fillMaxWidth()
                 .padding(40.dp)
                 .offset(x = 20.dp),
-            text = "Thank you for playing!",
+            text = stringResource(R.string.thank_you_for_playing),
             fontSize = 30.sp,
             color = White
         )
@@ -972,7 +973,7 @@ fun Android_14(
             onClick = { navHostController.navigate("S_1") }
         ) {
             Text(
-                "Repeat the game",
+                stringResource(R.string.repeat_the_game),
                 fontWeight = FontWeight.Bold,
             )
         }
